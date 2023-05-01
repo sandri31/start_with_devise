@@ -1,0 +1,4 @@
+  <h2>Bonjour <u><%= current_user.prenom %></u></h2>
+  <p>Voici l'email enregistrer: <u><%= current_user.email %></u></p>
+
+  <%= link_to "Deconnexion", destroy_user_session_path, data: {turbo_method: :delete} %>
